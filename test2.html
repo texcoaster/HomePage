@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>회원 가입</title>
+</head>
+<body>
+  <div id="container">
+    <h1>회원 가입</h1>
+    <form>
+      <fieldset>
+        <legend>사용자 정보</legend>
+        <ul>
+          <li>
+            <label for="uid">아이디</label>
+            <input type="text" id="uid">
+          </li>
+          <li>
+            <label for="age">나이</label>
+            <input type="number" id="age" min="8" max="13">
+          </li>
+          <li>
+            <label for="bir">생년월일</label>
+            <input type="date" id="bir" name="birthday">
+          </li>
+          <li>
+            <label for="umail">이메일</label>
+            <input type="email" id="umail">
+          </li>
+          <li>
+            <label for="pwd1">비밀번호</label>
+            <input type="password" id="pwd1">
+          </li>
+          <li>
+            <label for="pwd2">비밀번호 확인</label>
+            <input type="password" id="pwd2">
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend>이벤트 및 새로운 소식</legend>
+        <input type="radio" name="mailing" id="mailing_y">
+        <label for="mailing_y">메일 수신</label>
+        <input type="radio" name="mailing" id="mailing_n">
+        <label for="mailing_n">메일 수신 안 함</label>
+      </fieldset>
+
+      <label>(당신이 인간이라는 것을 증명하세요)</label>
+      <label for="time">현재 시각</label>
+      <input type="datetime-local" id="time">
+      <br>
+
+      <input type="button" value="게임 한 번 보러가시겠어요?" onclick="window.open('index.html')">
+      <br>
+
+      <input type="submit" value="가입하기">
+      <input type="reset" value="취소">
+    </form>
+  </div>
+</body>
+</html>
