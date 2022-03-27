@@ -13,27 +13,52 @@
         <ul>
           <li>
             <label for="uid">아이디</label>
-            <input type="text" id="uid">
+            <input type="text" id="uid" placeholder="아이디를 입력해주세요" autofocus required>
           </li>
           <li>
             <label for="age">나이</label>
-            <input type="number" id="age" min="8" max="13">
+            <input type="number" id="age" min="8" max="13" required>
+          </li>
+          <li>
+            <label for="gen">성별</label>
+            <select>
+              <option value="boy" selected>남자</option>
+              <option value="girl">여자</option>
+            </select>
+          </li>
+          <li>
+            <label for="face">프로필 사진</label>
+            <input type="file" id="face">
           </li>
           <li>
             <label for="bir">생년월일</label>
-            <input type="date" id="bir" name="birthday">
+            <input type="date" id="bir" name="birthday" required>
           </li>
           <li>
             <label for="umail">이메일</label>
-            <input type="email" id="umail">
+            <input type="email" id="umail" placeholder="이메일을 입력해주세요">
           </li>
           <li>
             <label for="pwd1">비밀번호</label>
-            <input type="password" id="pwd1">
+            <input type="password" id="pwd1" placeholder="비밀번호를 입력해주세요" required>
           </li>
           <li>
             <label for="pwd2">비밀번호 확인</label>
-            <input type="password" id="pwd2">
+            <input type="password" id="pwd2" placeholder="다시 한번 입력해주세요" required>
+          </li>
+          <li>
+            <label for="adr">집주소</label>
+            <input type="text" id="adr" list="pack">
+            <datalist id="pack">
+              <option value="수정구">경기도 성남시</option>
+              <option value="중원구">경기도 성남시</option>
+              <option value="분당구">경기도 성남시</option>
+            </datalist>
+          </li>
+          <li>
+            <label for="in">자기소개</label>
+            <br>
+            <textarea id="memo" cols="40" rows="4" placeholder="자기 소개글을 입력해주세요 (선택 사항)"></textarea>
           </li>
         </ul>
       </fieldset>
@@ -50,7 +75,7 @@
       <input type="datetime-local" id="time">
       <br>
 
-      <input type="button" value="게임 한 번 보러가시겠어요?" onclick="window.open('index.html')">
+      <button type="button" onclick="window.open('index.html')"><b>게임</b> 한 번 보러가시겠어요?</button>
       <br>
 
       <input type="submit" value="가입하기">
